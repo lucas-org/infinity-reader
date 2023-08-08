@@ -1,14 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
 import { Platform, SafeAreaView, StyleSheet, View } from 'react-native';
 import * as eva from '@eva-design/eva';
-import { EvaIconsPack } from '@ui-kitten/eva-icons';
+//import { EvaIconsPack } from '@ui-kitten/eva-icons';
 import { ApplicationProvider, Layout, IconRegistry } from '@ui-kitten/components';
 import LoginPage from './src/pages/Login';
 
 export default function App() {
   return (
     <>
-      <IconRegistry icons={EvaIconsPack} />
+      {/* <IconRegistry icons={EvaIconsPack} /> */}
       <SafeAreaView style={styles.safeArea}>
       <StatusBar style="light" translucent={Platform.OS === 'android' ? false : true} />
       <ApplicationProvider {...eva} theme={eva.light}>
